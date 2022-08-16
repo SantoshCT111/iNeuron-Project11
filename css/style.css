@@ -17,6 +17,9 @@
     
     
 }
+.bar {
+    display: none;
+}
 li{
     list-style: none;
 }
@@ -252,6 +255,9 @@ button {
     align-items: center;
     margin-top: 80px;
 }
+.check {
+    display: none;
+}
 .customer-revie> h1 , .customer-review >h3 {
     margin-left: 20vw;
     margin-right: 20vw;
@@ -356,4 +362,96 @@ margin-right: 10px;
 }
 .tick img {
     filter: invert(79%) sepia(15%) saturate(7451%) hue-rotate(111deg) brightness(91%) contrast(94%);
+}
+@media screen and (max-width:850px) {
+    .nav-right {
+        display: none;
+    }
+    .bar {
+        display: block;
+        width: 36px;
+        
+        
+        margin-top: 10px;
+    }
+ 
+    .package-part ,.cost,.techical-support{
+        flex-direction: column;
+       width: 80%;
+       margin-left: 40px;
+
+     
+    }
+    .package-part-right ,.cost-right,.technical-support-right {
+        align-self: flex-end;
+    }
+    .service-card p {
+        display: none;
+    }
+    .service-card h2 {
+        margin-top: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .service-card {
+        margin: 20px 40px;
+        
+    }
+    .price-packages  {
+        display: none;
+       
+    }
+
+    .check  {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+       
+    }
+    .check button {
+            background: linear-gradient(#09c0f8,#0461ea);
+            border: 1px solid white;
+
+
+
+    }
+    .services-upper {
+        flex-direction: column;
+    }
+    .reviews{
+        justify-content: center;
+    }
+    .register-now h4 {
+        display: none;
+    }
+    .register-now h1 {
+
+        font-size: 18px;
+        width: 100%;
+    }
+    .register-now-text {
+        width: 60%;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+     
+
+    }
+    .register-now-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .register-now {
+        flex-direction: column;
+       height: 100%;
+       align-items: flex-start;
+    }
+    .footer {
+        display: none;
+    }
+
+
 }
